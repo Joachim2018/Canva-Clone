@@ -1,0 +1,6 @@
+{
+  "name": "Canva Studio - Visual Design & Publishing Suite",
+  "description": "Full-featured reverse-engineered Canva design studio with multi-page visual editor, typography, shapes, templates, drag-and-drop elements, drawing tools, presentation mode, and Gemini Magic Studio AI generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom styled scrollbars for Canva sidebar and element panels */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
+
+/* Canvas checkerboard pattern for transparent / artboard staging */
+.bg-canvas-stage {
+  background-color: #0e131f;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-canvas-stage-light {
+  background-color: #ebedf0;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.06) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Snap guide lines animation */
+@keyframes guide-pulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.snap-guide {
+  animation: guide-pulse 1.5s ease-in-out infinite;
+}

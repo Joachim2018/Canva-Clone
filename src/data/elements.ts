@@ -1,0 +1,188 @@
+import { ShapeType } from '../types/canvas';
+
+export interface ShapePreset {
+  id: string;
+  name: string;
+  shapeType: ShapeType;
+  fill: string;
+  stroke: string;
+  strokeWidth: number;
+  width: number;
+  height: number;
+  borderRadius?: number;
+}
+
+export const SHAPE_PRESETS: ShapePreset[] = [
+  {
+    id: 'rect-rounded',
+    name: 'Rounded Rectangle',
+    shapeType: 'rectangle',
+    fill: '#7D2AE8',
+    stroke: 'transparent',
+    strokeWidth: 0,
+    width: 240,
+    height: 140,
+    borderRadius: 16,
+  },
+  {
+    id: 'circle-accent',
+    name: 'Circle',
+    shapeType: 'circle',
+    fill: '#00C4CC',
+    stroke: 'transparent',
+    strokeWidth: 0,
+    width: 180,
+    height: 180,
+  },
+  {
+    id: 'star-gold',
+    name: 'Star Badge',
+    shapeType: 'star',
+    fill: '#FFBD59',
+    stroke: 'transparent',
+    strokeWidth: 0,
+    width: 160,
+    height: 160,
+  },
+  {
+    id: 'triangle-coral',
+    name: 'Triangle',
+    shapeType: 'triangle',
+    fill: '#FF5757',
+    stroke: 'transparent',
+    strokeWidth: 0,
+    width: 160,
+    height: 150,
+  },
+  {
+    id: 'diamond-purple',
+    name: 'Diamond',
+    shapeType: 'diamond',
+    fill: '#C084FC',
+    stroke: 'transparent',
+    strokeWidth: 0,
+    width: 160,
+    height: 160,
+  },
+  {
+    id: 'hexagon-dark',
+    name: 'Hexagon',
+    shapeType: 'hexagon',
+    fill: '#1E293B',
+    stroke: 'transparent',
+    strokeWidth: 0,
+    width: 170,
+    height: 150,
+  },
+  {
+    id: 'heart-rose',
+    name: 'Heart',
+    shapeType: 'heart',
+    fill: '#F43F5E',
+    stroke: 'transparent',
+    strokeWidth: 0,
+    width: 160,
+    height: 150,
+  },
+  {
+    id: 'arrow-bold',
+    name: 'Directional Arrow',
+    shapeType: 'arrow',
+    fill: '#0F172A',
+    stroke: 'transparent',
+    strokeWidth: 0,
+    width: 200,
+    height: 90,
+  },
+  {
+    id: 'speech-bubble',
+    name: 'Quote Bubble',
+    shapeType: 'speech-bubble',
+    fill: '#E0F2FE',
+    stroke: '#0284C7',
+    strokeWidth: 2,
+    width: 220,
+    height: 140,
+    borderRadius: 12,
+  },
+  {
+    id: 'line-divider',
+    name: 'Line Divider',
+    shapeType: 'line',
+    fill: '#94A3B8',
+    stroke: '#94A3B8',
+    strokeWidth: 4,
+    width: 260,
+    height: 4,
+  },
+];
+
+export const TYPOGRAPHY_COMBOS = [
+  {
+    id: 'modern-bold',
+    name: 'Modern Bold',
+    title: 'SUMMER VIBES',
+    subtitle: 'COLLECTION 2026',
+    titleFont: 'Outfit',
+    subtitleFont: 'Plus Jakarta Sans',
+    titleWeight: '800' as const,
+    titleSize: 52,
+    subtitleSize: 15,
+    titleColor: '#0F172A',
+    subtitleColor: '#64748B',
+    letterSpacing: 2,
+  },
+  {
+    id: 'editorial-chic',
+    name: 'Editorial Luxury',
+    title: 'The Art of Simplicity',
+    subtitle: 'AUTUMN / WINTER LOOKBOOK',
+    titleFont: 'Playfair Display',
+    subtitleFont: 'Plus Jakarta Sans',
+    titleWeight: '700' as const,
+    titleSize: 46,
+    subtitleSize: 13,
+    titleColor: '#1E293B',
+    subtitleColor: '#A16207',
+    letterSpacing: 3,
+  },
+  {
+    id: 'neon-cyber',
+    name: 'Neon Glow',
+    title: 'FUTURE BEATS',
+    subtitle: 'LIVE ELECTRONIC SESSIONS',
+    titleFont: 'Oswald',
+    subtitleFont: 'JetBrains Mono',
+    titleWeight: '700' as const,
+    titleSize: 56,
+    subtitleSize: 14,
+    titleColor: '#38BDF8',
+    subtitleColor: '#A7F3D0',
+    letterSpacing: 4,
+  },
+  {
+    id: 'bold-deal',
+    name: 'Mega Sale Banner',
+    title: '50% OFF',
+    subtitle: 'THIS WEEKEND ONLY',
+    titleFont: 'Outfit',
+    subtitleFont: 'Plus Jakarta Sans',
+    titleWeight: '800' as const,
+    titleSize: 64,
+    subtitleSize: 16,
+    titleColor: '#EF4444',
+    subtitleColor: '#1F2937',
+    letterSpacing: 1,
+  },
+];
+
+export const STICKER_ELEMENTS = [
+  { id: 'sparkle', label: 'Sparkles', emoji: '✨', color: '#FBBF24' },
+  { id: 'fire', label: 'Trending', emoji: '🔥', color: '#F97316' },
+  { id: 'trophy', label: 'Winner', emoji: '🏆', color: '#EAB308' },
+  { id: 'target', label: 'Focus', emoji: '🎯', color: '#EF4444' },
+  { id: 'rocket', label: 'Launch', emoji: '🚀', color: '#6366F1' },
+  { id: 'verified', label: 'Official', emoji: '⭐', color: '#3B82F6' },
+  { id: 'heart-sticker', label: 'Love', emoji: '💖', color: '#EC4899' },
+  { id: 'lightning', label: 'Energy', emoji: '⚡', color: '#F59E0B' },
+];
